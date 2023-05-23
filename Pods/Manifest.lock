@@ -1,0 +1,26 @@
+PODS:
+  - lottie-ios (3.2.3)
+  - SDWebImage (5.12.0):
+    - SDWebImage/Core (= 5.12.0)
+  - SDWebImage/Core (5.12.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - lottie-ios (= 3.2.3)
+  - SDWebImage (= 5.12.0)
+  - SwiftyJSON (~> 4.3.0)
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+    - SDWebImage
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  SDWebImage: 4ea20cca2986adc5aacde07aa686742fd4c67a37
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 364648504b288bf4b9cce142dc7d9ab5a397b25a
+
+COCOAPODS: 1.12.1

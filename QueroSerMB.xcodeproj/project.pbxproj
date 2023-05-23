@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C15F50D62A1C4720004C7E3B /* QueroSerMBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15F50D52A1C4720004C7E3B /* QueroSerMBTests.swift */; };
+		C15F50E32A1C473F004C7E3B /* QueroSerMBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15F50E22A1C473F004C7E3B /* QueroSerMBUITests.swift */; };
+		C15F50E52A1C473F004C7E3B /* QueroSerMBUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15F50E42A1C473F004C7E3B /* QueroSerMBUITestsLaunchTests.swift */; };
+		C15F50EC2A1C490F004C7E3B /* ExchangeDetailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15F50EB2A1C490F004C7E3B /* ExchangeDetailUITests.swift */; };
+		C1BF903E2A1580A200965941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF903D2A1580A200965941 /* AppDelegate.swift */; };
+		C1BF90402A1580A200965941 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF903F2A1580A200965941 /* SceneDelegate.swift */; };
+		C1BF90422A1580A200965941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF90412A1580A200965941 /* ViewController.swift */; };
+		C1BF90452A1580A200965941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1BF90432A1580A200965941 /* Main.storyboard */; };
+		C1BF90472A1580A600965941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1BF90462A1580A600965941 /* Assets.xcassets */; };
+		C1BF904A2A1580A600965941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1BF90482A1580A600965941 /* LaunchScreen.storyboard */; };
+		C1BF90522A1581B300965941 /* CoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF90512A1581B300965941 /* CoinAPI.swift */; };
+		C1C3428A2A191C3000D4D9C2 /* Exchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C342892A191C3000D4D9C2 /* Exchange.swift */; };
+		C1C3428D2A1A84DE00D4D9C2 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C3428C2A1A84DE00D4D9C2 /* HomeRepository.swift */; };
+		C1CC445D2A1A897600DB18BD /* APIUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC445C2A1A897600DB18BD /* APIUtil.swift */; };
+		C1CC44622A1A8F4300DB18BD /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC44612A1A8F4300DB18BD /* ProgressHud.swift */; };
+		C1CC44662A1A8F7F00DB18BD /* loading_spinner.json in Resources */ = {isa = PBXBuildFile; fileRef = C1CC44632A1A8F7F00DB18BD /* loading_spinner.json */; };
+		C1CC44672A1A8F8000DB18BD /* happyLottery.json in Resources */ = {isa = PBXBuildFile; fileRef = C1CC44642A1A8F7F00DB18BD /* happyLottery.json */; };
+		C1CC44682A1A8F8000DB18BD /* LottieAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = C1CC44652A1A8F7F00DB18BD /* LottieAnimation.json */; };
+		C1CC446B2A1A935900DB18BD /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC446A2A1A935900DB18BD /* UIColors.swift */; };
+		C1CC446D2A1A95A600DB18BD /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC446C2A1A95A600DB18BD /* String.swift */; };
+		C1CC44732A1A9A6200DB18BD /* ExchangeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC44712A1A9A6200DB18BD /* ExchangeViewCell.swift */; };
+		C1CC44742A1A9A6200DB18BD /* ExchangeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CC44722A1A9A6200DB18BD /* ExchangeViewCell.xib */; };
+		C1CC44762A1A9F8C00DB18BD /* ExchangesIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC44752A1A9F8C00DB18BD /* ExchangesIcons.swift */; };
+		C1CC447B2A1BDD2A00DB18BD /* ExchangeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC44792A1BDD2A00DB18BD /* ExchangeDetailView.swift */; };
+		C1CC447C2A1BDD2A00DB18BD /* ExchangeDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CC447A2A1BDD2A00DB18BD /* ExchangeDetailView.xib */; };
+		C1CC447E2A1BE3C900DB18BD /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC447D2A1BE3C800DB18BD /* Symbol.swift */; };
+		C1CC44812A1BF6C400DB18BD /* ExchangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC44802A1BF6C400DB18BD /* ExchangeViewModel.swift */; };
+		C1CC44832A1BFBF000DB18BD /* ExchangeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC44822A1BFBF000DB18BD /* ExchangeDetailPresenter.swift */; };
+		C1CC44852A1BFC9D00DB18BD /* ExchangeDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC44842A1BFC9D00DB18BD /* ExchangeDetailInteractor.swift */; };
+		C1CC44872A1BFDDB00DB18BD /* ExchangeDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC44862A1BFDDB00DB18BD /* ExchangeDetailCoordinator.swift */; };
+		FF71E90BCCEA297AB2533C03 /* Pods_QueroSerMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15079D6075C2FF25A40EEA57 /* Pods_QueroSerMB.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C15F50D72A1C4720004C7E3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1BF90322A1580A200965941 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1BF90392A1580A200965941;
+			remoteInfo = QueroSerMB;
+		};
+		C15F50E62A1C473F004C7E3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1BF90322A1580A200965941 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1BF90392A1580A200965941;
+			remoteInfo = QueroSerMB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15079D6075C2FF25A40EEA57 /* Pods_QueroSerMB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QueroSerMB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3526A9B028BAA219220D82 /* Pods-QueroSerMB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QueroSerMB.debug.xcconfig"; path = "Target Support Files/Pods-QueroSerMB/Pods-QueroSerMB.debug.xcconfig"; sourceTree = "<group>"; };
+		7B1543BA98B203D5AEC9890A /* Pods-QueroSerMB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QueroSerMB.release.xcconfig"; path = "Target Support Files/Pods-QueroSerMB/Pods-QueroSerMB.release.xcconfig"; sourceTree = "<group>"; };
+		C15F50D32A1C4720004C7E3B /* QueroSerMBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QueroSerMBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15F50D52A1C4720004C7E3B /* QueroSerMBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueroSerMBTests.swift; sourceTree = "<group>"; };
+		C15F50E02A1C473E004C7E3B /* QueroSerMBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QueroSerMBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15F50E22A1C473F004C7E3B /* QueroSerMBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueroSerMBUITests.swift; sourceTree = "<group>"; };
+		C15F50E42A1C473F004C7E3B /* QueroSerMBUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueroSerMBUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C15F50EB2A1C490F004C7E3B /* ExchangeDetailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailUITests.swift; sourceTree = "<group>"; };
+		C1BF903A2A1580A200965941 /* QueroSerMB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QueroSerMB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1BF903D2A1580A200965941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1BF903F2A1580A200965941 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C1BF90412A1580A200965941 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1BF90442A1580A200965941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1BF90462A1580A600965941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1BF90492A1580A600965941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1BF904B2A1580A600965941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1BF90512A1581B300965941 /* CoinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPI.swift; sourceTree = "<group>"; };
+		C1C342892A191C3000D4D9C2 /* Exchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exchange.swift; sourceTree = "<group>"; };
+		C1C3428C2A1A84DE00D4D9C2 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		C1CC445C2A1A897600DB18BD /* APIUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUtil.swift; sourceTree = "<group>"; };
+		C1CC44612A1A8F4300DB18BD /* ProgressHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHud.swift; sourceTree = "<group>"; };
+		C1CC44632A1A8F7F00DB18BD /* loading_spinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_spinner.json; sourceTree = "<group>"; };
+		C1CC44642A1A8F7F00DB18BD /* happyLottery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = happyLottery.json; sourceTree = "<group>"; };
+		C1CC44652A1A8F7F00DB18BD /* LottieAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieAnimation.json; sourceTree = "<group>"; };
+		C1CC446A2A1A935900DB18BD /* UIColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColors.swift; sourceTree = "<group>"; };
+		C1CC446C2A1A95A600DB18BD /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		C1CC44712A1A9A6200DB18BD /* ExchangeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewCell.swift; sourceTree = "<group>"; };
+		C1CC44722A1A9A6200DB18BD /* ExchangeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeViewCell.xib; sourceTree = "<group>"; };
+		C1CC44752A1A9F8C00DB18BD /* ExchangesIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesIcons.swift; sourceTree = "<group>"; };
+		C1CC44792A1BDD2A00DB18BD /* ExchangeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailView.swift; sourceTree = "<group>"; };
+		C1CC447A2A1BDD2A00DB18BD /* ExchangeDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeDetailView.xib; sourceTree = "<group>"; };
+		C1CC447D2A1BE3C800DB18BD /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		C1CC44802A1BF6C400DB18BD /* ExchangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewModel.swift; sourceTree = "<group>"; };
+		C1CC44822A1BFBF000DB18BD /* ExchangeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailPresenter.swift; sourceTree = "<group>"; };
+		C1CC44842A1BFC9D00DB18BD /* ExchangeDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailInteractor.swift; sourceTree = "<group>"; };
+		C1CC44862A1BFDDB00DB18BD /* ExchangeDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C15F50D02A1C4720004C7E3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C15F50DD2A1C473E004C7E3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1BF90372A1580A200965941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF71E90BCCEA297AB2533C03 /* Pods_QueroSerMB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B76A7EAF345DC0B548FF1AB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F3526A9B028BAA219220D82 /* Pods-QueroSerMB.debug.xcconfig */,
+				7B1543BA98B203D5AEC9890A /* Pods-QueroSerMB.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C15F50D42A1C4720004C7E3B /* QueroSerMBTests */ = {
+			isa = PBXGroup;
+			children = (
+				C15F50D52A1C4720004C7E3B /* QueroSerMBTests.swift */,
+			);
+			path = QueroSerMBTests;
+			sourceTree = "<group>";
+		};
+		C15F50E12A1C473F004C7E3B /* QueroSerMBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C15F50E22A1C473F004C7E3B /* QueroSerMBUITests.swift */,
+				C15F50E42A1C473F004C7E3B /* QueroSerMBUITestsLaunchTests.swift */,
+				C15F50EB2A1C490F004C7E3B /* ExchangeDetailUITests.swift */,
+			);
+			path = QueroSerMBUITests;
+			sourceTree = "<group>";
+		};
+		C1BF90312A1580A200965941 = {
+			isa = PBXGroup;
+			children = (
+				C1BF903C2A1580A200965941 /* QueroSerMB */,
+				C15F50D42A1C4720004C7E3B /* QueroSerMBTests */,
+				C15F50E12A1C473F004C7E3B /* QueroSerMBUITests */,
+				C1BF903B2A1580A200965941 /* Products */,
+				B76A7EAF345DC0B548FF1AB5 /* Pods */,
+				C517D5D74B6CE806F07AF764 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1BF903B2A1580A200965941 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1BF903A2A1580A200965941 /* QueroSerMB.app */,
+				C15F50D32A1C4720004C7E3B /* QueroSerMBTests.xctest */,
+				C15F50E02A1C473E004C7E3B /* QueroSerMBUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1BF903C2A1580A200965941 /* QueroSerMB */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC44772A1BAD0400DB18BD /* Modules */,
+				C1CC445E2A1A8F1100DB18BD /* Suport */,
+				C1C342852A19194300D4D9C2 /* API */,
+				C1C3428B2A1A846800D4D9C2 /* Home */,
+				C1BF903D2A1580A200965941 /* AppDelegate.swift */,
+				C1BF903F2A1580A200965941 /* SceneDelegate.swift */,
+				C1BF90462A1580A600965941 /* Assets.xcassets */,
+				C1BF90482A1580A600965941 /* LaunchScreen.storyboard */,
+				C1BF904B2A1580A600965941 /* Info.plist */,
+			);
+			path = QueroSerMB;
+			sourceTree = "<group>";
+		};
+		C1C342852A19194300D4D9C2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC445B2A1A896400DB18BD /* Util */,
+				C1C342872A1919B100D4D9C2 /* CoinAPI */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C1C342872A1919B100D4D9C2 /* CoinAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C1C342882A1919D400D4D9C2 /* Model */,
+				C1BF90512A1581B300965941 /* CoinAPI.swift */,
+			);
+			path = CoinAPI;
+			sourceTree = "<group>";
+		};
+		C1C342882A1919D400D4D9C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1C342892A191C3000D4D9C2 /* Exchange.swift */,
+				C1CC44752A1A9F8C00DB18BD /* ExchangesIcons.swift */,
+				C1CC447D2A1BE3C800DB18BD /* Symbol.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1C3428B2A1A846800D4D9C2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC446E2A1A99E200DB18BD /* UI */,
+				C1C3428E2A1A84E600D4D9C2 /* Ropository */,
+				C1BF90412A1580A200965941 /* ViewController.swift */,
+				C1BF90432A1580A200965941 /* Main.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C1C3428E2A1A84E600D4D9C2 /* Ropository */ = {
+			isa = PBXGroup;
+			children = (
+				C1C3428C2A1A84DE00D4D9C2 /* HomeRepository.swift */,
+			);
+			path = Ropository;
+			sourceTree = "<group>";
+		};
+		C1CC445B2A1A896400DB18BD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC445C2A1A897600DB18BD /* APIUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C1CC445E2A1A8F1100DB18BD /* Suport */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC445F2A1A8F1C00DB18BD /* UI */,
+			);
+			path = Suport;
+			sourceTree = "<group>";
+		};
+		C1CC445F2A1A8F1C00DB18BD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC44692A1A92D700DB18BD /* Utils */,
+				C1CC44602A1A8F2900DB18BD /* ProgressHud */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C1CC44602A1A8F2900DB18BD /* ProgressHud */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC44642A1A8F7F00DB18BD /* happyLottery.json */,
+				C1CC44632A1A8F7F00DB18BD /* loading_spinner.json */,
+				C1CC44652A1A8F7F00DB18BD /* LottieAnimation.json */,
+				C1CC44612A1A8F4300DB18BD /* ProgressHud.swift */,
+			);
+			path = ProgressHud;
+			sourceTree = "<group>";
+		};
+		C1CC44692A1A92D700DB18BD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC446A2A1A935900DB18BD /* UIColors.swift */,
+				C1CC446C2A1A95A600DB18BD /* String.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C1CC446E2A1A99E200DB18BD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC44712A1A9A6200DB18BD /* ExchangeViewCell.swift */,
+				C1CC44722A1A9A6200DB18BD /* ExchangeViewCell.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C1CC44772A1BAD0400DB18BD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC44782A1BAD2600DB18BD /* Exchange */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C1CC44782A1BAD2600DB18BD /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC447F2A1BF6AA00DB18BD /* ViewModel */,
+				C1CC44792A1BDD2A00DB18BD /* ExchangeDetailView.swift */,
+				C1CC447A2A1BDD2A00DB18BD /* ExchangeDetailView.xib */,
+				C1CC44822A1BFBF000DB18BD /* ExchangeDetailPresenter.swift */,
+				C1CC44842A1BFC9D00DB18BD /* ExchangeDetailInteractor.swift */,
+				C1CC44862A1BFDDB00DB18BD /* ExchangeDetailCoordinator.swift */,
+			);
+			path = Exchange;
+			sourceTree = "<group>";
+		};
+		C1CC447F2A1BF6AA00DB18BD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC44802A1BF6C400DB18BD /* ExchangeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C517D5D74B6CE806F07AF764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15079D6075C2FF25A40EEA57 /* Pods_QueroSerMB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C15F50D22A1C4720004C7E3B /* QueroSerMBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C15F50DB2A1C4721004C7E3B /* Build configuration list for PBXNativeTarget "QueroSerMBTests" */;
+			buildPhases = (
+				C15F50CF2A1C4720004C7E3B /* Sources */,
+				C15F50D02A1C4720004C7E3B /* Frameworks */,
+				C15F50D12A1C4720004C7E3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C15F50D82A1C4720004C7E3B /* PBXTargetDependency */,
+			);
+			name = QueroSerMBTests;
+			productName = QueroSerMBTests;
+			productReference = C15F50D32A1C4720004C7E3B /* QueroSerMBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C15F50DF2A1C473E004C7E3B /* QueroSerMBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C15F50E82A1C473F004C7E3B /* Build configuration list for PBXNativeTarget "QueroSerMBUITests" */;
+			buildPhases = (
+				C15F50DC2A1C473E004C7E3B /* Sources */,
+				C15F50DD2A1C473E004C7E3B /* Frameworks */,
+				C15F50DE2A1C473E004C7E3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C15F50E72A1C473F004C7E3B /* PBXTargetDependency */,
+			);
+			name = QueroSerMBUITests;
+			productName = QueroSerMBUITests;
+			productReference = C15F50E02A1C473E004C7E3B /* QueroSerMBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C1BF90392A1580A200965941 /* QueroSerMB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1BF904E2A1580A600965941 /* Build configuration list for PBXNativeTarget "QueroSerMB" */;
+			buildPhases = (
+				324AF67CADAFB2FAB04FE5EF /* [CP] Check Pods Manifest.lock */,
+				C1BF90362A1580A200965941 /* Sources */,
+				C1BF90372A1580A200965941 /* Frameworks */,
+				C1BF90382A1580A200965941 /* Resources */,
+				C22E91AD0C94A31D819522B0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QueroSerMB;
+			productName = QueroSerMB;
+			productReference = C1BF903A2A1580A200965941 /* QueroSerMB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1BF90322A1580A200965941 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C15F50D22A1C4720004C7E3B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C1BF90392A1580A200965941;
+					};
+					C15F50DF2A1C473E004C7E3B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C1BF90392A1580A200965941;
+					};
+					C1BF90392A1580A200965941 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C1BF90352A1580A200965941 /* Build configuration list for PBXProject "QueroSerMB" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1BF90312A1580A200965941;
+			productRefGroup = C1BF903B2A1580A200965941 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1BF90392A1580A200965941 /* QueroSerMB */,
+				C15F50D22A1C4720004C7E3B /* QueroSerMBTests */,
+				C15F50DF2A1C473E004C7E3B /* QueroSerMBUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C15F50D12A1C4720004C7E3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C15F50DE2A1C473E004C7E3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1BF90382A1580A200965941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1CC44672A1A8F8000DB18BD /* happyLottery.json in Resources */,
+				C1CC44682A1A8F8000DB18BD /* LottieAnimation.json in Resources */,
+				C1CC44662A1A8F7F00DB18BD /* loading_spinner.json in Resources */,
+				C1CC44742A1A9A6200DB18BD /* ExchangeViewCell.xib in Resources */,
+				C1CC447C2A1BDD2A00DB18BD /* ExchangeDetailView.xib in Resources */,
+				C1BF904A2A1580A600965941 /* LaunchScreen.storyboard in Resources */,
+				C1BF90472A1580A600965941 /* Assets.xcassets in Resources */,
+				C1BF90452A1580A200965941 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		324AF67CADAFB2FAB04FE5EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QueroSerMB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C22E91AD0C94A31D819522B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QueroSerMB/Pods-QueroSerMB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QueroSerMB/Pods-QueroSerMB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QueroSerMB/Pods-QueroSerMB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C15F50CF2A1C4720004C7E3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C15F50D62A1C4720004C7E3B /* QueroSerMBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C15F50DC2A1C473E004C7E3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C15F50EC2A1C490F004C7E3B /* ExchangeDetailUITests.swift in Sources */,
+				C15F50E32A1C473F004C7E3B /* QueroSerMBUITests.swift in Sources */,
+				C15F50E52A1C473F004C7E3B /* QueroSerMBUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1BF90362A1580A200965941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1BF90422A1580A200965941 /* ViewController.swift in Sources */,
+				C1CC44852A1BFC9D00DB18BD /* ExchangeDetailInteractor.swift in Sources */,
+				C1BF903E2A1580A200965941 /* AppDelegate.swift in Sources */,
+				C1CC44732A1A9A6200DB18BD /* ExchangeViewCell.swift in Sources */,
+				C1CC446D2A1A95A600DB18BD /* String.swift in Sources */,
+				C1CC44622A1A8F4300DB18BD /* ProgressHud.swift in Sources */,
+				C1CC447B2A1BDD2A00DB18BD /* ExchangeDetailView.swift in Sources */,
+				C1CC44832A1BFBF000DB18BD /* ExchangeDetailPresenter.swift in Sources */,
+				C1BF90402A1580A200965941 /* SceneDelegate.swift in Sources */,
+				C1C3428A2A191C3000D4D9C2 /* Exchange.swift in Sources */,
+				C1CC445D2A1A897600DB18BD /* APIUtil.swift in Sources */,
+				C1C3428D2A1A84DE00D4D9C2 /* HomeRepository.swift in Sources */,
+				C1CC44762A1A9F8C00DB18BD /* ExchangesIcons.swift in Sources */,
+				C1CC447E2A1BE3C900DB18BD /* Symbol.swift in Sources */,
+				C1BF90522A1581B300965941 /* CoinAPI.swift in Sources */,
+				C1CC44812A1BF6C400DB18BD /* ExchangeViewModel.swift in Sources */,
+				C1CC44872A1BFDDB00DB18BD /* ExchangeDetailCoordinator.swift in Sources */,
+				C1CC446B2A1A935900DB18BD /* UIColors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C15F50D82A1C4720004C7E3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1BF90392A1580A200965941 /* QueroSerMB */;
+			targetProxy = C15F50D72A1C4720004C7E3B /* PBXContainerItemProxy */;
+		};
+		C15F50E72A1C473F004C7E3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1BF90392A1580A200965941 /* QueroSerMB */;
+			targetProxy = C15F50E62A1C473F004C7E3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1BF90432A1580A200965941 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1BF90442A1580A200965941 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1BF90482A1580A600965941 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1BF90492A1580A600965941 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C15F50D92A1C4721004C7E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wellysson.QueroSerMBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QueroSerMB.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QueroSerMB";
+			};
+			name = Debug;
+		};
+		C15F50DA2A1C4721004C7E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wellysson.QueroSerMBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QueroSerMB.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QueroSerMB";
+			};
+			name = Release;
+		};
+		C15F50E92A1C473F004C7E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wellysson.QueroSerMBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QueroSerMB;
+			};
+			name = Debug;
+		};
+		C15F50EA2A1C473F004C7E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wellysson.QueroSerMBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QueroSerMB;
+			};
+			name = Release;
+		};
+		C1BF904C2A1580A600965941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1BF904D2A1580A600965941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1BF904F2A1580A600965941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F3526A9B028BAA219220D82 /* Pods-QueroSerMB.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QueroSerMB/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wellysson.QueroSerMB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1BF90502A1580A600965941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B1543BA98B203D5AEC9890A /* Pods-QueroSerMB.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QueroSerMB/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wellysson.QueroSerMB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C15F50DB2A1C4721004C7E3B /* Build configuration list for PBXNativeTarget "QueroSerMBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C15F50D92A1C4721004C7E3B /* Debug */,
+				C15F50DA2A1C4721004C7E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C15F50E82A1C473F004C7E3B /* Build configuration list for PBXNativeTarget "QueroSerMBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C15F50E92A1C473F004C7E3B /* Debug */,
+				C15F50EA2A1C473F004C7E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1BF90352A1580A200965941 /* Build configuration list for PBXProject "QueroSerMB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1BF904C2A1580A600965941 /* Debug */,
+				C1BF904D2A1580A600965941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1BF904E2A1580A600965941 /* Build configuration list for PBXNativeTarget "QueroSerMB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1BF904F2A1580A600965941 /* Debug */,
+				C1BF90502A1580A600965941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1BF90322A1580A200965941 /* Project object */;
+}
