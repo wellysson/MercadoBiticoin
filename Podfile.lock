@@ -1,5 +1,20 @@
 PODS:
   - lottie-ios (3.2.3)
+  - OHHTTPStubs (9.1.0):
+    - OHHTTPStubs/Default (= 9.1.0)
+  - OHHTTPStubs/Core (9.1.0)
+  - OHHTTPStubs/Default (9.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (9.1.0)
+  - OHHTTPStubs/Swift (9.1.0):
+    - OHHTTPStubs/Default
   - SDWebImage (5.12.0):
     - SDWebImage/Core (= 5.12.0)
   - SDWebImage/Core (5.12.0)
@@ -7,20 +22,24 @@ PODS:
 
 DEPENDENCIES:
   - lottie-ios (= 3.2.3)
+  - OHHTTPStubs
+  - OHHTTPStubs/Swift
   - SDWebImage (= 5.12.0)
   - SwiftyJSON (~> 4.3.0)
 
 SPEC REPOS:
   trunk:
     - lottie-ios
+    - OHHTTPStubs
     - SDWebImage
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
   SDWebImage: 4ea20cca2986adc5aacde07aa686742fd4c67a37
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 364648504b288bf4b9cce142dc7d9ab5a397b25a
+PODFILE CHECKSUM: 80419ee9f7f63798aa724c0d67397e3afca86db3
 
 COCOAPODS: 1.12.1

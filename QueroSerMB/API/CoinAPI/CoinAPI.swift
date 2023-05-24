@@ -74,7 +74,8 @@ class CoinAPI {
         self.apiKey = key
     }
     
-    static var shared = CoinAPI(apiKey: "DEF523A7-297B-4C78-B3DE-0799FA64CD52") //"9A73FC76-554D-4B75-B014-DE071E483DFE")
+    static var shared = CoinAPI(apiKey: "9A73FC76-554D-4B75-B014-DE071E483DFE")
+//    static var shared = CoinAPI(apiKey: "DEF523A7-297B-4C78-B3DE-0799FA64CD52")
     
     /*
      * Perform URLRequest and return data based on the API response.

@@ -6,16 +6,33 @@
 //
 
 import UIKit
+//import OHHTTPStubs
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var titleLabel: UILabel!
     
     private var exchanges: [Exchange]?
     private var exchangesIcons: [ExchangeIcon]?
     let coin = CoinAPI.shared
     
+    private var homeRepository: HomeRepositoryProtocol?
+    
+//    init(homeRepository: HomeRepositoryProtocol = HomeRepository()) {
+//        super.init(nibName: nil, bundle: nil)
+//        self.homeRepository = homeRepository
+//    }
+//
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if self.homeRepository == nil {
+            self.homeRepository = HomeRepository()
+        }
+        self.tableView.accessibilityIdentifier = "exchangeTableView"
         self.configureTableView()
         self.loadExchanges()
     }
@@ -46,7 +63,7 @@ class ViewController: UIViewController {
     
     private func loadExchanges() {
         ProgressHud.shared.show()
-        HomeRepository.getExchanges(complete: { [weak self] (exchanges, error) in
+        self.homeRepository?.getExchanges(complete: { [weak self] (exchanges, error) in
             guard let self = self else { return }
             self.exchanges = exchanges
             if let error = error {
@@ -58,7 +75,7 @@ class ViewController: UIViewController {
             self.reloadComplet()
         })
         
-        HomeRepository.getExchangesIcons(complete: { [weak self] (icons, error) in
+        self.homeRepository?.getExchangesIcons(complete: { [weak self] (icons, error) in
             guard let self = self else { return }
             self.exchangesIcons = icons
             if let error = error {
@@ -90,7 +107,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
+extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let _cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ExchangeViewCell.self), for: indexPath) as? ExchangeViewCell, let exchanges = self.exchanges, let exchangesIcons = self.exchangesIcons {
             let exchange = exchanges[indexPath.row]

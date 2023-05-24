@@ -6,9 +6,13 @@
 //
 
 import Foundation
+protocol HomeRepositoryProtocol: AnyObject {
+    func getExchanges(complete: @escaping ((_ exchanges: [Exchange],_ error: Error?) -> Void))
+    func getExchangesIcons(complete: @escaping ((_ exchangesIcons: [ExchangeIcon],_ error: Error?) -> Void))
+}
 
-class HomeRepository {
-    static func getExchanges(complete: @escaping ((_ exchanges: [Exchange],_ error: Error?) -> Void)) {
+class HomeRepository: HomeRepositoryProtocol {
+    func getExchanges(complete: @escaping ((_ exchanges: [Exchange],_ error: Error?) -> Void)) {
         CoinAPI.shared.metadataExchanges { (jsonResponse, error) in
             guard let jsonResponse = jsonResponse else {
                 complete([], error)
@@ -31,7 +35,7 @@ class HomeRepository {
         }
     }
     
-    static func getExchangesIcons(complete: @escaping ((_ exchangesIcons: [ExchangeIcon],_ error: Error?) -> Void)) {
+    func getExchangesIcons(complete: @escaping ((_ exchangesIcons: [ExchangeIcon],_ error: Error?) -> Void)) {
         CoinAPI.shared.metadataExchangesIcons { (jsonResponse, error) in
             guard let jsonResponse = jsonResponse else {
                 complete([], error)
