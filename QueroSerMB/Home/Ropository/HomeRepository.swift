@@ -25,13 +25,9 @@ class HomeRepository: HomeRepositoryProtocol {
                 exchanges = try JSONDecoder().decode([Exchange].self, from: resp.data(using: .utf8)!)
                 complete(exchanges, error)
             } catch let error as NSError {
-                print("Erro na no parse Json: \(error.localizedDescription)")
                 let parseError = CustomError.parseError
                 complete([], parseError)
             }
-//            print(exchanges.first?.dataOrderbookStart?.toDate(withFormat: DateFormat.yyyyMMddTHHmmSSSZ.rawValue))
-//            print("Metadata - List all exchanges : \(jsonResponse)")
-//            print("error: \(String(describing: error))")
         }
     }
     
@@ -47,14 +43,9 @@ class HomeRepository: HomeRepositoryProtocol {
                 exchangesIcons = try JSONDecoder().decode([ExchangeIcon].self, from: resp.data(using: .utf8)!)
                 complete(exchangesIcons, error)
             } catch let error as NSError {
-                print("Erro na no parse Json: \(error.localizedDescription)")
                 let parseError = CustomError.parseError
                 complete([], parseError)
             }
-            
-//            print(exchanges.first?.dataOrderbookStart?.toDate(withFormat: DateFormat.yyyyMMddTHHmmSSSZ.rawValue))
-//            print("Metadata - List all exchanges : \(jsonResponse)")
-//            print("error: \(String(describing: error))")
         }
     }
 }

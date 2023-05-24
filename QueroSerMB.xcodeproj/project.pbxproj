@@ -8,14 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C15C249E2A1D384D00A9F44B /* MainViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15C249D2A1D384D00A9F44B /* MainViewControllerUITests.swift */; };
-		C15C24B32A1D6B7C00A9F44B /* exchanges.json in Resources */ = {isa = PBXBuildFile; fileRef = C15C24B22A1D6B7C00A9F44B /* exchanges.json */; };
 		C15F50D62A1C4720004C7E3B /* QueroSerMBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15F50D52A1C4720004C7E3B /* QueroSerMBTests.swift */; };
 		C15F50EC2A1C490F004C7E3B /* ExchangeDetailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15F50EB2A1C490F004C7E3B /* ExchangeDetailUITests.swift */; };
 		C160E95D2A1D98D30043D5EE /* ExchangeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E95B2A1D98D30043D5EE /* ExchangeDetailView.swift */; };
 		C160E95E2A1D98D30043D5EE /* ExchangeDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C160E95C2A1D98D30043D5EE /* ExchangeDetailView.xib */; };
-		C19D4E4D2A1D8B0300FEC56F /* Pods_QueroSerMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19D4E4C2A1D8B0300FEC56F /* Pods_QueroSerMB.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		C19D4E4F2A1D8B0C00FEC56F /* Pods_QueroSerMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19D4E4E2A1D8B0C00FEC56F /* Pods_QueroSerMB.framework */; };
-		C1BE44DD2A1D85B800B1D867 /* HomeRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE44DC2A1D85B800B1D867 /* HomeRepositoryMock.swift */; };
 		C1BF903E2A1580A200965941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF903D2A1580A200965941 /* AppDelegate.swift */; };
 		C1BF90402A1580A200965941 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF903F2A1580A200965941 /* SceneDelegate.swift */; };
 		C1BF90422A1580A200965941 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF90412A1580A200965941 /* MainViewController.swift */; };
@@ -65,7 +61,6 @@
 		5F3526A9B028BAA219220D82 /* Pods-QueroSerMB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QueroSerMB.debug.xcconfig"; path = "Target Support Files/Pods-QueroSerMB/Pods-QueroSerMB.debug.xcconfig"; sourceTree = "<group>"; };
 		7B1543BA98B203D5AEC9890A /* Pods-QueroSerMB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QueroSerMB.release.xcconfig"; path = "Target Support Files/Pods-QueroSerMB/Pods-QueroSerMB.release.xcconfig"; sourceTree = "<group>"; };
 		C15C249D2A1D384D00A9F44B /* MainViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerUITests.swift; sourceTree = "<group>"; };
-		C15C24B22A1D6B7C00A9F44B /* exchanges.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exchanges.json; sourceTree = "<group>"; };
 		C15C24C82A1D746B00A9F44B /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15C24CC2A1D768800A9F44B /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15C24CE2A1D769700A9F44B /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,10 +72,7 @@
 		C15F50EB2A1C490F004C7E3B /* ExchangeDetailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailUITests.swift; sourceTree = "<group>"; };
 		C160E95B2A1D98D30043D5EE /* ExchangeDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExchangeDetailView.swift; path = QueroSerMB/Modules/Exchange/UI/ExchangeDetailView.swift; sourceTree = SOURCE_ROOT; };
 		C160E95C2A1D98D30043D5EE /* ExchangeDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExchangeDetailView.xib; path = QueroSerMB/Modules/ExchangeDetailView.xib; sourceTree = SOURCE_ROOT; };
-		C19D4E4C2A1D8B0300FEC56F /* Pods_QueroSerMB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_QueroSerMB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C19D4E4E2A1D8B0C00FEC56F /* Pods_QueroSerMB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_QueroSerMB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19D4E502A1D8F5E00FEC56F /* Pods_QueroSerMB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_QueroSerMB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1BE44DC2A1D85B800B1D867 /* HomeRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryMock.swift; sourceTree = "<group>"; };
 		C1BE44DE2A1D887300B1D867 /* Pods_QueroSerMB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_QueroSerMB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BF903A2A1580A200965941 /* QueroSerMB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QueroSerMB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BF903D2A1580A200965941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,7 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C19D4E4F2A1D8B0C00FEC56F /* Pods_QueroSerMB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C19D4E4D2A1D8B0300FEC56F /* Pods_QueroSerMB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,10 +148,8 @@
 		C15F50E12A1C473F004C7E3B /* QueroSerMBUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C1BE44DB2A1D85AA00B1D867 /* Mocks */,
 				C15C249D2A1D384D00A9F44B /* MainViewControllerUITests.swift */,
 				C15F50EB2A1C490F004C7E3B /* ExchangeDetailUITests.swift */,
-				C15C24B22A1D6B7C00A9F44B /* exchanges.json */,
 			);
 			path = QueroSerMBUITests;
 			sourceTree = "<group>";
@@ -173,14 +161,6 @@
 				C160E95C2A1D98D30043D5EE /* ExchangeDetailView.xib */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		C1BE44DB2A1D85AA00B1D867 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				C1BE44DC2A1D85B800B1D867 /* HomeRepositoryMock.swift */,
-			);
-			path = Mocks;
 			sourceTree = "<group>";
 		};
 		C1BF90312A1580A200965941 = {
@@ -333,8 +313,8 @@
 		C1CC44782A1BAD2600DB18BD /* Exchange */ = {
 			isa = PBXGroup;
 			children = (
-				C19D4E522A1D977700FEC56F /* UI */,
 				C1CC447F2A1BF6AA00DB18BD /* ViewModel */,
+				C19D4E522A1D977700FEC56F /* UI */,
 				C1CC44822A1BFBF000DB18BD /* ExchangeDetailPresenter.swift */,
 				C1CC44842A1BFC9D00DB18BD /* ExchangeDetailInteractor.swift */,
 				C1CC44862A1BFDDB00DB18BD /* ExchangeDetailCoordinator.swift */,
@@ -353,10 +333,6 @@
 		C517D5D74B6CE806F07AF764 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C19D4E502A1D8F5E00FEC56F /* Pods_QueroSerMB.framework */,
-				C19D4E4E2A1D8B0C00FEC56F /* Pods_QueroSerMB.framework */,
-				C19D4E4C2A1D8B0300FEC56F /* Pods_QueroSerMB.framework */,
-				C1BE44DE2A1D887300B1D867 /* Pods_QueroSerMB.framework */,
 				C15C24D22A1D770100A9F44B /* OHHTTPStubs.framework */,
 				C15C24D02A1D76D500A9F44B /* OHHTTPStubs.framework */,
 				C15C24CE2A1D769700A9F44B /* OHHTTPStubs.framework */,
@@ -384,8 +360,6 @@
 				C15F50D82A1C4720004C7E3B /* PBXTargetDependency */,
 			);
 			name = QueroSerMBTests;
-			packageProductDependencies = (
-			);
 			productName = QueroSerMBTests;
 			productReference = C15F50D32A1C4720004C7E3B /* QueroSerMBTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -404,8 +378,6 @@
 				C15F50E72A1C473F004C7E3B /* PBXTargetDependency */,
 			);
 			name = QueroSerMBUITests;
-			packageProductDependencies = (
-			);
 			productName = QueroSerMBUITests;
 			productReference = C15F50E02A1C473E004C7E3B /* QueroSerMBUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -425,8 +397,6 @@
 			dependencies = (
 			);
 			name = QueroSerMB;
-			packageProductDependencies = (
-			);
 			productName = QueroSerMB;
 			productReference = C1BF903A2A1580A200965941 /* QueroSerMB.app */;
 			productType = "com.apple.product-type.application";
@@ -463,8 +433,6 @@
 				Base,
 			);
 			mainGroup = C1BF90312A1580A200965941;
-			packageReferences = (
-			);
 			productRefGroup = C1BF903B2A1580A200965941 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -488,7 +456,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C15C24B32A1D6B7C00A9F44B /* exchanges.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,7 +533,6 @@
 			files = (
 				C15F50EC2A1C490F004C7E3B /* ExchangeDetailUITests.swift in Sources */,
 				C15C249E2A1D384D00A9F44B /* MainViewControllerUITests.swift in Sources */,
-				C1BE44DD2A1D85B800B1D867 /* HomeRepositoryMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
